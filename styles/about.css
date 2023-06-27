@@ -1,6 +1,7 @@
 .about_me_container {
     font-family: var(--roboto);
-    background-color: #272428;
+    /* #272428 */
+    background-color: #1C1C1C;
     padding-bottom: 7rem;
     padding-left: 10%;
     padding-right: 20%;
