@@ -31,7 +31,9 @@
     }
 }
 
-    /* Tablets */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+    .information_about {
+        font-size: 1.2rem;
+    }
 }
