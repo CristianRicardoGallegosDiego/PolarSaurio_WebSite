@@ -1,0 +1,132 @@
+.presentation_container {
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    padding-top: 5%;
+}
+
+.my_intro {
+    font-size: 1rem;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.my_name {
+    font-size: 5rem;
+    color: white;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.extra_information {
+    font-size: 3rem;
+    color: white;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.short_information {
+    font-family: var(--roboto);
+    font-size: 1.5rem;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.my_name, .extra_information {
+    padding-left: 13%;
+    padding-right: 10%;
+}
+
+.my_intro, .short_information {
+    padding-left: 10%;
+    padding-right: 45%;
+}
+
+.presentation_nav_container {
+    display: flex;
+    justify-content: center;
+}
+
+.presentation_nav_item {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1.1rem;
+    margin-left: 1.1rem;
+    color: white;
+}
+
+.presentation_nav_item i {
+    display: flex;
+    justify-content: center;
+}
+
+.github_item, .linkedin_item, .instagram_item, .cv_item {
+    padding-top: 4px;
+}
+
+.main_img {
+    width: 70%;
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 767px) {
+    .presentation_container {
+        height: 27rem;
+        width: 100%;
+    }
+
+    .my_intro {
+        font-size: 0.5rem;
+    }
+
+    .my_name {
+        font-size: 1.5rem;
+        padding-right: 10%;
+    }
+
+    .extra_information {
+        font-size: 1.2rem;
+        padding-right: 10%;
+    }
+
+    .short_information {
+        font-size: 1rem;
+        padding-right: 10%;
+    }
+
+    .presentation_nav_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .presentation_nav_item {
+        padding-top: 1rem;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .presentation_container {
+        height: 60vh;
+        width: auto;
+    }
+
+    .my_name {
+        font-size: 3rem;
+        padding-right: 10%;
+    }
+
+    .extra_information {
+        font-size: 2rem;
+        padding-right: 10%;
+    }
+
+    .short_information {
+        padding-right: 10%;
+    }
+}

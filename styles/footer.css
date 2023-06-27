@@ -1,0 +1,17 @@
+.footer_container {
+    font-size: 1rem;
+    padding-top: 1%;
+    text-align: center;
+    background: #2C2A32;
+}
+
+.footer_text {
+    font-family: var(--roboto);
+    color: white;
+    padding-bottom: 1%;
+}
+
+.animated_emoji {
+    display: inline-block;
+    animation: pulse 1s infinite;
+}
