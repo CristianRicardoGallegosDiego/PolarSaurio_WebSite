@@ -1,4 +1,5 @@
-const texts = ["Construyo páginas para la web.", "Construyendo el futuro digital a través de software y aplicaciones innovadoras."];
+const texts = ["Exploring the frontiers of computational science and front-end development...",
+    "Building the bridge between creativity"];
 const typedTextElement = document.getElementById("typewriter");
 
 function typeText(text) {
