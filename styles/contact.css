@@ -61,7 +61,7 @@
 
 .me_img {
     align-self: center;
-    width: 30vw;
+    width: 26rem;
     border-radius: 8px;
     height: auto;
 }
@@ -70,10 +70,15 @@
 @media screen and (max-width: 767px) {
     .contact_container {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+    }
+
+    .information_contact_container {
+        display: inline;
+        position: relative;
     }
 
     .first_text_contact {
@@ -83,10 +88,7 @@
     }
 
     .button_contact_me {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-top: 0;
-        margin-bottom: 2rem;
+        margin: 0 1rem 2rem;
         font-size: 1.3rem;
     }
 
@@ -96,8 +98,10 @@
     }
 
     .me_img {
-        width: 75vw;
+        width: 20rem;
+        max-width: 250px;
         height: auto;
+        margin: 1rem 1rem;
     }
 }
 
