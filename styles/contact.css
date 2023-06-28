@@ -37,6 +37,9 @@
 .button_contact_me:hover {
     animation: none;
     background: #F0ECE3;
+    transform: scale(1.05);
+    display: inline-block;
+    box-shadow: 8px 8px 8px black;
 }
 
 .text_button:hover {
@@ -45,7 +48,6 @@
 
 .text_button {
     text-decoration: none;
-    cursor: none;
     color: #F0ECE3;
 }
 
@@ -62,4 +64,70 @@
     width: 30vw;
     border-radius: 8px;
     height: auto;
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 767px) {
+    .contact_container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .first_text_contact {
+        padding-top: 0;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    .button_contact_me {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .third_text_contact {
+        margin-top: 0;
+        font-size: 3rem;
+    }
+
+    .me_img {
+        width: 75vw;
+        height: auto;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+    .contact_container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .first_text_contact {
+        padding-top: 0;
+        padding-left: 7%;
+    }
+
+    .button_contact_me {
+        margin-left: 26%;
+
+    }
+
+    .third_text_contact {
+        margin-top: 0;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .me_img {
+        width: 25%;
+    }
 }

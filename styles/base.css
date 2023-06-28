@@ -8,3 +8,20 @@
 * {
     font-family: var(--roboto);
 }
+
+body::-webkit-scrollbar {
+    width: 1.5vh;
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #F0ECE3;
+}

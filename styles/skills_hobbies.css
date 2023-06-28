@@ -31,6 +31,7 @@
     height: 10rem;
     margin: 1rem 1rem;
     color: white;
+    cursor:none;
 }
 
 .skills_item:hover {

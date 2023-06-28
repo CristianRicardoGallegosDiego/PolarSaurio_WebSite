@@ -97,7 +97,7 @@
 }
 
 /* Mobile Phones */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 780px) {
     .presentation_container {
         height: 27rem;
         width: 100%;
@@ -138,7 +138,7 @@
 }
 
 /* Tablets */
-@media screen and (min-width: 768px) and (max-width: 1020px) {
+@media screen and (min-width: 781px) and (max-width: 1020px) {
     .presentation_container {
         height: 60vh;
         width: auto;
