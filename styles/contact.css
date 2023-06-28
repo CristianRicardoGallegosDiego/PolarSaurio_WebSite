@@ -1,6 +1,7 @@
 .contact {
     background: #F0ECE3;
-    width: 98.93vw;
+    width: 100%;
+    box-sizing: border-box;
     height: 100vh;
     display: inline-block;
 }
