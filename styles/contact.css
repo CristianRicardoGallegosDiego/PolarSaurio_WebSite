@@ -16,7 +16,45 @@
     color: #F0ECE3;
     justify-content: space-around;
     flex-direction: row;
-    transform: translate(12%, 12%);
+    transform: translate(11.7%, 12%);
+}
+
+.first_text_contact {
+    padding-top: 3vw;
+    font-size: 2vw;
+}
+
+.button_contact_me {
+    margin-left: 7vh;
+    margin-top: 2vw;
+    font-size: 3vw;
+    animation: animationButton 2s infinite;
+    background: black;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+.button_contact_me:hover {
+    animation: none;
+    background: #F0ECE3;
+}
+
+.text_button:hover {
+    color: black;
+}
+
+.text_button {
+    text-decoration: none;
+    cursor: none;
+    color: #F0ECE3;
+}
+
+.third_text_contact {
+    margin-top: 10rem;
+    font-size: 9vw;
+    font-weight: bold;
+    background-color: #F0ECE3;
+    color: #272528;
 }
 
 .me_img {

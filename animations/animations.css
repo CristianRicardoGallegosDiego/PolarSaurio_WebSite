@@ -39,6 +39,12 @@
     }
 }
 
+@keyframes animationButton {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.025); }
+    100% { transform: scale(1); }
+}
+
 @keyframes pulse {
     0% {
         transform: scale(0);
