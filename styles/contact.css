@@ -1,5 +1,26 @@
-.contact_container {
+.contact {
     background: #F0ECE3;
-    width: 98.9vw;
+    width: 98.93vw;
     height: 100vh;
+    display: inline-block;
+}
+
+.contact_container {
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
+    background: #272528;
+    border-radius: 8px;
+    display: flex;
+    color: #F0ECE3;
+    justify-content: space-around;
+    flex-direction: row;
+    transform: translate(12%, 12%);
+}
+
+.me_img {
+    align-self: center;
+    width: 30vw;
+    border-radius: 8px;
+    height: auto;
 }
