@@ -81,6 +81,7 @@
     justify-content: space-around;
 }
 
+/* Mobile Phones */
 @media screen and (max-width: 280px) {
     .contact {
         padding: 2rem 2rem;
@@ -114,7 +115,6 @@
     }
 }
 
-/* Mobile Phones */
 @media screen and (min-width: 281px) and (max-width: 767px) {
     .contact {
         padding: 3rem 2rem;
