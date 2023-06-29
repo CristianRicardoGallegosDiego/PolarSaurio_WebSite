@@ -1,33 +1,28 @@
 .contact {
-    background: #F0ECE3;
-    width: 100%;
-    box-sizing: border-box;
-    height: 100vh;
-    display: inline-block;
+    background-color: #F0ECE3;
+    padding: 10rem 2rem;
 }
 
 .contact_container {
-    position: absolute;
-    width: 80vw;
-    height: 80vh;
-    background: #272528;
-    border-radius: 8px;
+    background-color: #272528;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
     display: flex;
-    color: #F0ECE3;
     justify-content: space-around;
-    flex-direction: row;
-    transform: translate(11.7%, 12%);
+    color: #F0ECE3;
+    flex-wrap: wrap;
 }
 
 .first_text_contact {
-    padding-top: 3vw;
-    font-size: 2vw;
+    margin-top: 2rem;
+    font-size: 1.8rem;
 }
 
 .button_contact_me {
-    margin-left: 7vh;
-    margin-top: 2vw;
-    font-size: 3vw;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top:2rem;
+    font-size: 3rem;
     animation: animationButton 2s infinite;
     background: black;
     border: none;
@@ -42,34 +37,90 @@
     box-shadow: 8px 8px 8px black;
 }
 
-.text_button:hover {
-    color: black;
-}
-
 .text_button {
     text-decoration: none;
     color: #F0ECE3;
 }
 
+.text_button:hover {
+    color: black;
+}
+
+.social_media_contact {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+}
+
+.social_media_item_contact {
+    font-size: 3rem;
+    margin: 1rem;
+    transition: 0.3s;
+    text-decoration: none;
+    color: #F0ECE3;
+}
+
+.social_media_item_contact:hover {
+    transform: scale(0.8);
+}
+
 .third_text_contact {
-    margin-top: 10rem;
-    font-size: 9vw;
+    margin-top: 9rem;
+    font-size: 7rem;
     font-weight: bold;
     background-color: #F0ECE3;
     color: #272528;
 }
 
 .me_img {
+    padding: 1rem 0.5rem;
     align-self: center;
-    width: 26rem;
-    border-radius: 8px;
-    height: auto;
+    border-radius: 2rem;
+    height: 30rem;
+    width: auto;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 280px) {
+    .contact {
+        padding: 2rem 2rem;
+    }
+
+    .first_text_contact {
+        padding: 0 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .button_contact_me {
+        font-size: 1rem;
+        margin-top: 0;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
+
+    .social_media_item_contact {
+        font-size: 1.5rem;
+    }
+
+    .third_text_contact {
+        margin-top: 1rem;
+        font-size: 2.3rem;
+    }
+
+    .me_img {
+        width: 10rem;
+        height: auto;
+        padding: 1rem 0;
+    }
 }
 
 /* Mobile Phones */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 281px) and (max-width: 767px) {
+    .contact {
+        padding: 3rem 2rem;
+    }
+
     .contact_container {
-        display: flex;
         justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
@@ -77,61 +128,70 @@
     }
 
     .information_contact_container {
-        display: inline;
-        position: relative;
+        display: block;
     }
 
     .first_text_contact {
-        padding-top: 0;
-        margin-bottom: 1rem;
+        padding: 0 0.5rem 1rem;
         font-size: 1rem;
     }
 
     .button_contact_me {
-        margin: 0 1rem 2rem;
         font-size: 1.3rem;
+        margin-top: 0;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .third_text_contact {
-        margin-top: 0;
-        font-size: 3rem;
+        margin-top: 3rem;
+        font-size: 3.3rem;
     }
 
     .me_img {
-        width: 20rem;
-        max-width: 250px;
-        height: auto;
-        margin: 1rem 1rem;
+        height: 20rem;
+        max-height: 250px;
+        max-width: none;
+        width: auto;
+        padding: 1rem 1rem;
     }
 }
+
 
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 1020px) {
     .contact_container {
-        display: flex;
-        justify-content: space-around;
+        justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
     }
 
+    .information_contact_container {
+        display: block;
+    }
+
     .first_text_contact {
-        padding-top: 0;
-        padding-left: 7%;
+        padding: 0 0.5rem 1rem;
+        font-size: 2rem;
     }
 
     .button_contact_me {
-        margin-left: 26%;
-
+        font-size: 3rem;
+        margin-top: 0;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .third_text_contact {
-        margin-top: 0;
-        border-radius: 10px;
-        border: none;
+        margin-top: 3rem;
+        font-size: 8rem;
     }
 
     .me_img {
-        width: 25%;
+        width: 40rem;
+        height: auto;
+        padding: 1rem 1rem;
+        max-width: none;
     }
 }
