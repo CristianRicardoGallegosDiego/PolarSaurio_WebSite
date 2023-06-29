@@ -1,0 +1,111 @@
+.education {
+    background: #555555;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.education_title {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.line {
+    display: block;
+    height: 0.25vh;
+    background: white;
+    margin-bottom: 1rem;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.education_courses_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.education_course_item {
+    margin: 1rem 1rem;
+}
+
+.education_img_unam, .education_img_oracle {
+    border-radius: 1rem;
+    background: white;
+    padding: 1rem 1rem;
+    transition: transform 0.3s;
+}
+
+.education_img_unam {
+    height: 20rem;
+    width: 20rem;
+}
+
+.education_img_oracle {
+    height: 20rem;
+    width: 22.5rem;
+}
+
+.education_img_unam:hover, .education_img_oracle:hover {
+    box-shadow: 0px 24px 32px -8px black;
+    cursor: none;
+    transform: scale(1.05);
+    transition: transform 1s;
+}
+
+.title_course {
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+}
+
+.information_course {
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 280px) {
+    .education_title {
+        font-size: 2rem;
+    }
+
+    .education_img_unam {
+        height: 11rem;
+        width: 11rem;
+    }
+
+    .education_img_oracle {
+        height: 11rem;
+        width: 13.5rem;
+    }
+
+    .title_course {
+        font-weight: bold;
+        font-size: 1.4rem;
+        padding-top: 1.5rem;
+    }
+
+    .information_course {
+        font-weight: lighter;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 281px) and (max-width: 767px) {
+    .education_title {
+        font-size: 2.5rem;
+    }
+
+    .education_img_unam {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .education_img_oracle {
+        height: 14rem;
+        width: 16.5rem;
+    }
+}

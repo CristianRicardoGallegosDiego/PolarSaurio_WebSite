@@ -47,6 +47,7 @@
 .presentation_nav_container {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .presentation_nav_item {

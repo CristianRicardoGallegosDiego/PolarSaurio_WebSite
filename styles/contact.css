@@ -58,6 +58,7 @@
     transition: 0.3s;
     text-decoration: none;
     color: #F0ECE3;
+    position: relative;
 }
 
 .social_media_item_contact:hover {
@@ -79,6 +80,7 @@
     height: 30rem;
     width: auto;
     justify-content: space-around;
+    position: relative;
 }
 
 /* Mobile Phones */

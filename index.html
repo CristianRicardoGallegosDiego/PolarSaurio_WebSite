@@ -18,13 +18,15 @@
         <link href="styles/about.css" rel="stylesheet">
         <link href="styles/skills_hobbies.css" rel="stylesheet">
         <link href="styles/education.css" rel="stylesheet">
+        <link href="styles/projects.css" rel="stylesheet">
         <link href="styles/contact.css" rel="stylesheet">
         <link href="styles/footer.css" rel="stylesheet">
         <link href="img/icon.png" rel="icon">
 
-        <title>Home | Cristian Gallegos</title>
+        <title>Cristian Gallegos</title>
     </head>
     <body>
+        <div id="particles-js"></div>
         <header class="header_container">
             <h1 class="icon_name"><strong class="name_title">&lt;</strong>Cristian Gallegos<strong class="name_title">/&gt;</strong></h1>
             <nav class="header_nav">
@@ -38,14 +40,14 @@
                 </address>
             </nav>
         </header>
-        <main>
-            <section class="presentation_container" id="particles-js">
+        <main >
+            <section class="presentation_container" >
                 <h5 class="my_intro">¡Hi! my name is</h5>
                 <h1 class="my_name">Cristian Gallegos</h1>
                 <h1 class="extra_information" id="typewriter">Exploring the frontiers of computational science and front-end development...</h1>
                 <p class="short_information">
                     I'm a student at the Faculty of Sciences, UNAM. Currently, I'm involved
-                    in the ONE-Oracle Next Education ONE program at Alura Latam, where I'm
+                    in the ONE-Oracle Next Education program at Alura Latam, where I'm
                     expanding my educational horizons.
                 </p>
                 <nav>
@@ -142,6 +144,25 @@
                     <h2 class="hobbies_title">Hobbies</h2>
                 </section>
             </section>
+            <section class="education">
+                <h1 class="education_title">Education</h1>
+                <div class="line"></div>
+                <ul class="education_courses_container">
+                    <li class="education_course_item">
+                        <img class="education_img_unam" src="img/UNAMLogoHover.png" alt="UNAM Logo">
+                        <h2 class="title_course">Computer Science</h2>
+                        <h3 class="information_course">In progress - Universidad Nacional Autónoma de México</h3>
+                    </li>
+                    <li class="education_course_item">
+                        <img class="education_img_oracle" src="img/OneProgramHover.png" alt="Oracle Next Education Logo">
+                        <h2 class="title_course">Front-End Development</h2>
+                        <h3 class="information_course">In progress - ONE Oracle Next Education Alura Latam </h3>
+                    </li>
+                </ul>
+            </section>
+            <section class="projects">
+                <h1>Projects</h1>
+            </section>
             <section class="contact">
                 <div class="contact_container">
                     <div class="information_contact_container">
@@ -150,8 +171,9 @@
                             <a class="text_button" href="mailto:cristianga2002@ciencias.unam.mx">Connect with me online</a>
                         </button>
                         <nav class="social_media_contact">
-                            <a class="social_media_item_contact" href="https://github.com/CristianRicardoGallegosDiego" target="_blank">
-                                <i class="fab fa-github"></i>
+                            <i class="fas fa-mailbox"></i>
+                            <a class="social_media_item_contact" href="mailto:cristianga2002@ciencias.unam.mx" target="_blank">
+                                <i class="fab fa-google"></i>
                             </a>
                             <a class="social_media_item_contact" href="https://www.linkedin.com/in/cristian-ricardo-gallegos-diego-087308212" target="_blank">
                                 <i class="fab fa-linkedin"></i>
@@ -170,7 +192,8 @@
             <h6 class="footer_text">Designed, Built & Made with <span class="animated_emoji">💛</span> by Cristian Gallegos</h6>
             <h6 class="footer_text">Copyright © 2023 | All Rights Reserved</h6>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script src="particles.js"></script>
+        <!--<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
         <script src="animations/animations.js"></script>
     </body>
 </html>

@@ -5,6 +5,8 @@
     justify-content: space-between;
     padding-top: 1%;
     padding-bottom: 1%;
+    height: 2.5rem;
+    position: relative;
 }
 
 .icon_name {
@@ -20,6 +22,7 @@
 
 .header_nav {
     display: flex;
+    justify-content: space-between;
 }
 
 .headerPrincipal_nav_item {
@@ -30,13 +33,14 @@
     font-size: 1.2rem;
     margin-right: 0.45rem;
     margin-left: 0.45rem;
-    padding: .75rem 0.5rem;
+    padding: 0.5rem 0.5rem;
 }
 
 .headerPrincipal_nav_item:hover {
-    border: 2px white solid;
+    border: 0.1rem white solid;
     border-image: linear-gradient(to right, #9500FF, #09F000, #00DDFF) 1;
     animation: borderAnimation 4s infinite;
+    padding: 0.4rem 0.4rem;
 }
 
 .item_email {
@@ -59,7 +63,7 @@
 }
 
 /* Tablets */
-@media screen and (min-width: 768px) and (max-width: 1020px) {
+@media screen and (min-width: 768px) and (max-width: 1193px) {
     .header_item_desktop {
         display: none;
     }

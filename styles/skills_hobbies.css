@@ -18,6 +18,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    position: relative;
 }
 
 .skills_item {
