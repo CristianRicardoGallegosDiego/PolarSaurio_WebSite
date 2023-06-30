@@ -25,6 +25,48 @@ function nextWord () {
     typeText(indexWord);
 }
 
+const carousel = document.querySelector(".carousel");
+let isDrraging = false, startX, startScrollLeft;
+const dragStart = (e) => {
+    isDrraging = true;
+    carousel.classList.add("dragging");
+    startX = e.pageX;
+    startScrollLeft = carousel.scrollLeft;
+}
+const dragging = (e) => {
+    if(!isDrraging) return;
+    carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+}
+
+const dragStop = () => {
+    isDrraging = false;
+    carousel.classList.remove("dragging");
+}
+
+const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+const arrowsBtns = document.querySelectorAll(".wrapper .arrow");
+arrowsBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carousel.scrollLeft += btn.id === "leftt" ? - firstCardWidth : firstCardWidth;
+    })
+})
+
+
+const carouselChildrens = [...carousel.children];
+let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+
+carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+});
+
+carouselChildrens.slice(0, cardPerView).forEach(card => {
+    carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+});
+
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", dragStop);
+
 nextWord();
 particlesJS(
     {
