@@ -122,8 +122,8 @@
     height: 70px;
     width: 70px;
     text-align: center;
-    background: black;
-    color: #F0ECE3;
+    background: #F0ECE3;
+    color: black;
     line-height: 70px;
     border-radius: 10px;
     cursor: pointer;
@@ -136,8 +136,6 @@
 .wrapper .left:hover, .wrapper .right:hover {
     transform: scale(1.1);
     top: 37%;
-    background: #F0ECE3;
-    color: black;
     box-shadow: 0 3px 6px rgb(0, 0, 0, 1);
 }
 
@@ -179,7 +177,7 @@
     scroll-snap-align: start;
     background: black;
     border-radius: 8px;
-    color: #F0ECE3;
+    color: white;
     display: flex;
     padding-bottom: 15px;
     align-items: center;
@@ -190,7 +188,7 @@
 }
 
 .card:hover {
-    background: #F0ECE3;
+    background: white;
     color: black;
 }
 
