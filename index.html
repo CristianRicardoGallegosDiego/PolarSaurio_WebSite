@@ -30,11 +30,11 @@
         <header class="header_container">
             <h1 class="icon_name"><strong class="name_title">&lt;</strong>Cristian Gallegos<strong class="name_title">/&gt;</strong></h1>
             <nav class="header_nav">
-                <a class="headerPrincipal_nav_item header_item_desktop" href="#">About Me</a>
-                <a class="headerPrincipal_nav_item header_item_desktop" href="#">Skills</a>
-                <a class="headerPrincipal_nav_item header_item_desktop" href="#">Soft Skills</a>
-                <a class="headerPrincipal_nav_item header_item_desktop" href="#">Education</a>
-                <a class="headerPrincipal_nav_item header_item_desktop" href="#">Projects</a>
+                <a class="headerPrincipal_nav_item header_item_desktop" href="#about_me_section">About Me</a>
+                <a class="headerPrincipal_nav_item header_item_desktop" href="#skills_section">Skills</a>
+                <a class="headerPrincipal_nav_item header_item_desktop" href="#soft_skills_section">Soft Skills</a>
+                <a class="headerPrincipal_nav_item header_item_desktop" href="#education_section">Education</a>
+                <a class="headerPrincipal_nav_item header_item_desktop" href="#projects_section">Projects</a>
                 <address>
                     <a class="headerPrincipal_nav_item item_email" href="mailto:cristianga2002@ciencias.unam.mx">cristianga2002@ciencias.unam.mx</a>
                 </address>
@@ -79,7 +79,7 @@
                     </ul>
                 </nav>
             </section>
-            <section class="about_me_container">
+            <section class="about_me_container" id="about_me_section">
                 <h2 class="title_about">About Me</h2>
                 <p class="information_about">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus.
@@ -90,7 +90,7 @@
                     Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.
                 </p>
             </section>
-            <section class="skills_hobbies_container">
+            <section class="skills_hobbies_container" id="skills_section">
                 <section class="skills">
                     <h2 class="skills_title">Skills &amp; Tools</h2>
                     <ul class="skills_container">
@@ -140,7 +140,7 @@
                         </li>
                     </ul>
                 </section>
-                <h2 class="soft_skills_title">Soft Skills</h2>
+                <h2 class="soft_skills_title" id="soft_skills_section">Soft Skills</h2>
                 <section class="soft_skills">
                     <div class="wrapper">
                         <i class="fas fa-chevron-left left arrow" id="left"></i>
@@ -211,7 +211,7 @@
                 </section>
             </section>
             <section class="education">
-                <h1 class="education_title">Education</h1>
+                <h1 class="education_title" id="education_section">Education</h1>
                 <div class="line"></div>
                 <ul class="education_courses_container">
                     <li class="education_course_item">
@@ -227,7 +227,7 @@
                 </ul>
             </section>
             <section class="projects">
-                <h1 class="projects_title">Projects</h1>
+                <h1 class="projects_title" id="projects_section">Projects</h1>
                 <div class="projects_card_container">
                     <div class="card_project">
                         <img class="image_project" src="img/Encryptor.png" alt="Encryptor Project Image">
@@ -275,11 +275,17 @@
             </section>
         </main>
         <footer class="footer_container">
-            <h6 class="footer_text">Designed, Built & Made with <span class="animated_emoji">💛</span> by Cristian Gallegos</h6>
+            <h6 class="footer_text">Designed, Built & Made with <span class="animated_emoji">💙</span> by Cristian Gallegos</h6>
             <h6 class="footer_text">Copyright © 2023 | All Rights Reserved</h6>
         </footer>
-        <script src="particles.js"></script>
-        <!--<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        -->
+
+        <script src="animations/ScrollRevealV4.js"></script>
+        <script src="animations/particles.js"></script>
         <script src="animations/animations.js"></script>
+        <script src="animations/transitions.js"></script>
     </body>
 </html>
